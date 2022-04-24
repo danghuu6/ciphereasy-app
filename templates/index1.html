@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: #eee;
+        }
+
+        span {
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0062cc;
+            border-bottom: 2px solid #0062cc;
+        }
+
+        /* .box {
+            padding: 60px 0px;
+        } */
+
+        .box-part {
+            background: #FFF;
+            border-radius: 0;
+            padding: 60px 10px;
+            margin: 30px 0px;
+        }
+
+        .text {
+            margin: 20px 0px;
+        }
+
+        .fa {
+            color: #4183D7;
+        }
+
+        .item:hover {
+            background-color: green;
+            color: white;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="bg-white rounded my-2" style="height: 50px; text-align: center;">
+    <h1>CIPHER EASY</h1>
+</div>
+<div class="box">
+    <div class="container">
+
+        <marquee style="background: green; color:#FFF" ; scrollamount="10" ; scrolldelay="120">
+            Mã học phần: CT20401 | Tên học phần: An toàn bảo mật thông tin | Tên nhóm thực hiện: Xin một lần điểm A |
+            Trường Đại
+            học Cần Thơ
+        </marquee>
+        <div class="row">
+            <div class="col-4 " onclick="window.location.href = 'caesar_page'">
+                <div class="box-part text-center  rounded h-75 item">
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>CEASAR</h4>
+                    </div>
+                    <div class="text">
+                                <span>Là hệ mã cổ điển và đơn giản nhất được dùng trong thực tế bởi hoàng đế La mã
+                                    Caesar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " onclick="window.location.href = 'affine_page'">
+                <div class="box-part text-center  rounded h-75 item ">
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>AFFINE</h4>
+                    </div>
+                    <div class="text">
+                            <span>Dùng một bảng chữ cái, trong đó mỗi chữ cái được ánh xạ tới
+                                một số sau đó mã hóa qua một hàm số toán học đơn giản</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 " onclick="window.location.href = 'rsa_page'">
+                <div class="box-part text-center rounded h-75 item ">
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>RSA</h4>
+                    </div>
+                    <div class="text">
+                            <span>RSA là một thuật toán mật mã hóa khóa công khai. Đây là thuật toán đầu tiên phù hợp
+                                với việc tạo ra chữ ký điện tử đồng thời với việc mã hóa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " onclick="window.location.href = 'des_page'">
+                <div class="box-part text-center rounded h-75 item ">
+                    <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>DES</h4>
+                    </div>
+                    <div class="text">
+                            <span>Phương pháp mật mã hóa được FIPS chọn làm chuẩn chính thức vào năm 1976.
+                                Sau đó chuẩn này được sử dụng rộng rãi trên phạm vi thế giới.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4" onclick="window.location.href = 'hill_page'">
+                <div class="box-part text-center  rounded h-75 item">
+                    <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>HILL</h4>
+                    </div>
+                    <div class="text">
+                            <span>Hill là một mật mã thay thế đa hình dựa trên đại số tuyến tính. Được phát minh bởi
+                                Lester S. Hill</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4 " onclick="window.location.href = 'vigenere_page'">
+                <div class="box-part text-center rounded h-75 item">
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                    <div class="title">
+                        <h4>VIGENERE</h4>
+                    </div>
+                    <div class="text">
+                            <span>Phương pháp mã hóa văn bản bằng cách sử dụng xen kẽ một số phép
+                                mã hóa Caesar khác nhau dựa trên các chữ cái của một từ khóa.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
